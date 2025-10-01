@@ -2,7 +2,9 @@
 #include "ConfigManager.h"
 #include "CliManager.h"
 
+#ifndef ESP8266
 const int   LED_BUILTIN = 2; // the number of the LED pin
+#endif
 unsigned long previousMillis = 0;        // will store last time LED was updated
 const long interval = 1000;           // interval at which to blink (milliseconds)
 int ledState = 0;
